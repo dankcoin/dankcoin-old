@@ -35,8 +35,8 @@
         <translation>Билдирүүнү &amp;текшерүү...</translation>
     </message>
     <message>
-        <source>Litecoin</source>
-        <translation>Litecoin</translation>
+        <source>Dankcoin</source>
+        <translation>Dankcoin</translation>
     </message>
     <message>
         <source>Wallet</source>

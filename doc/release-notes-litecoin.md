@@ -1,13 +1,13 @@
-Litecoin Core version 0.10.3.0 is now available from:
+Dankcoin Core version 0.10.3.0 is now available from:
 
-  <https://download.litecoin.org/litecoin-0.10.3.0/>
+  <https://download.dankcoin.org/dankcoin-0.10.3.0/>
 
 This is a new minor version release, bringing security fixes and translation 
 updates. It is recommended to upgrade to this version as soon as possible.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/litecoin-project/litecoin/issues>
+  <https://github.com/dankcoin/dankcoin/issues>
 
 Upgrading and downgrading
 =========================
@@ -17,15 +17,15 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Litecoin-Qt (on Mac) or
-litecoind/litecoin-qt (on Linux).
+installer (on Windows) or just copy over /Applications/Dankcoin-Qt (on Mac) or
+dankcoind/dankcoin-qt (on Linux).
 
 Downgrade warning
 ------------------
 
 Because release 0.10+ and later makes use of headers-first synchronization and
 parallel block download (see further), the block files and databases are not
-backwards-compatible with pre-0.10 versions of Litecoin Core or other software:
+backwards-compatible with pre-0.10 versions of Dankcoin Core or other software:
 
 * Blocks will be stored on disk out of order (in the order they are
 received, really), which makes it incompatible with some tools or
@@ -75,15 +75,15 @@ for nuisance malleability on SIGHASH_ALL P2PKH transactions. On the down-side
 it will block most transactions made by sufficiently out of date software.
 
 Unlike the other avenues to change txids on transactions this
-one was randomly violated by all deployed litecoin software prior to
+one was randomly violated by all deployed dankcoin software prior to
 its discovery. So, while other malleability vectors where made
 non-standard as soon as they were discovered, this one has remained
 permitted. Even BIP62 did not propose applying this rule to
 old version transactions, but conforming implementations have become
 much more common since BIP62 was initially written.
 
-Litecoin Core has produced compatible signatures since the 0.9 development
-branch, but this didn't make it into a release until 0.10. Both litecoinj
+Dankcoin Core has produced compatible signatures since the 0.9 development
+branch, but this didn't make it into a release until 0.10. Both dankcoinj
 and Electrum have been more recently updated.
 
 This does not replace the need for BIP62 or similar, as miners can
@@ -99,11 +99,11 @@ http://fc15.ifca.ai/preproceedings/bitcoin/paper_9.pdf
 =================
 
 This release is based upon Bitcoin Core v0.10.3.  Their upstream changelog applies to us and
-is included in as separate release-notes.  This section describes the Litecoin-specific differences.
+is included in as separate release-notes.  This section describes the Dankcoin-specific differences.
 
 - Adjusted default confirmation target value (nTxConfirmTarget) which is used for transaction fee 
 	calculation, resulting in lower and more accurate fees. This mainly impacts users who use
-	litecoind via litecoin-cli or the RPC service to send transactions as GUI (Qt) users
+	dankcoind via dankcoin-cli or the RPC service to send transactions as GUI (Qt) users
 	already have the option to change their fee preferences. 
 - Fixed OSX notification bug displaying incorrect icon.
 - Fixed OSX Chinese language Unicode character display bug.
