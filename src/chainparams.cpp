@@ -159,8 +159,8 @@ public:
         fSkipProofOfWorkCheck = false;
         fTestnetToBeDeprecatedFieldRPC = false;
 
-        // Dankcoin: Mainnet v2 enforced as of block 710k
-        nEnforceV2AfterHeight = 710000;
+        // Dankcoin: Mainnet v2 enforced as of block 1
+        nEnforceV2AfterHeight = 1;
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const 
@@ -217,8 +217,8 @@ public:
         fMineBlocksOnDemand = false;
         fTestnetToBeDeprecatedFieldRPC = true;
 
-        // Dankcoin: Testnet v2 enforced as of block 400k
-        nEnforceV2AfterHeight = 400000;
+        // Dankcoin: Testnet v2 enforced as of block 1
+        nEnforceV2AfterHeight = 1;
     }
     const Checkpoints::CCheckpointData& Checkpoints() const 
     {
