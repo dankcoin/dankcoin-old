@@ -12,7 +12,7 @@ with no central authority: managing transactions and issuing money are carried
 out collectively by the network. Dankcoin Core is the name of open source
 software which enables the use of this currency.
 
-For more information, as well as an immediately useable, binary version of
+For more information, as well as an immediately usable, binary version of
 the Dankcoin Core software, see https://dankcoin.org
 
 License
@@ -55,7 +55,7 @@ lots of money.
 
 Large changes should have a test plan, and should be tested by somebody other
 than the developer who wrote the code.
-Creating a thread in the [Dankcoin discussion forum](https://dankcointalk.org/index.php?board=2.0) will allow the Dankcoin
+Creating a thread in the [Dankcoin discussion forum](http://talk.dankcoin.org/index.php?forums/dankcoin-development-technical-discussion.3/) will allow the Dankcoin
 development team members to review your proposal and to provide assistance with creating a test plan. 
 
 

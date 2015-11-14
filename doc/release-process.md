@@ -130,13 +130,13 @@ rm SHA256SUMS
 
 - Announce the release:
 
-  - Release sticky on dankcointalk: https://dankcointalk.org/index.php?board=1.0
-
-  - dankcoin-development mailing list
+  - Release sticky on dankcoin-talk: http://talk.dankcoin.org/index.php?forums/general-discussion.2/
+  
+  - dankcoin-dev mailing list
 
   - Update title of #dankcoin on Freenode IRC
 
-  - Optionally reddit /r/dankcoin, ... but this will usually sort out itself
+  - Optionally reddit /r/dankcoinorg, ... but this will usually sort out itself
 
 - Add release notes for the new version to the directory `doc/release-notes` in git master
 
