@@ -126,7 +126,7 @@ public:
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 50 * COIN;
+        txNew.vout[0].nValue = 420 * COIN;
         txNew.vout[0].scriptPubKey = CScript() << ParseHex("049ed967f7c8fdcbe176c3b6455320ad92afd399d4cee77cc28060c3f415a654d327083d10f8b62486d6b94214529fc95dd16b888663a89a2f93ce0be466f01fd7") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
