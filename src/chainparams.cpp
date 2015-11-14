@@ -103,7 +103,7 @@ public:
         vAlertPubKey = ParseHex("04dd495d02a611dffc9647dd1a50e5f84ae4114f7324903d55b2d9a10f77d3aea02db3e19e0f342b698c4c640f376287a4c09146bf71860730c9d467f467fe937d");
         nDefaultPort = 4200;
         bnProofOfWorkLimit = ~uint256(0) >> 20;
-        nSubsidyHalvingInterval = 840000;
+        nSubsidyHalvingInterval = 450500;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
