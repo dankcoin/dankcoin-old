@@ -115,7 +115,7 @@ public:
         pchMessageStart[1] = 0xc0;
         pchMessageStart[2] = 0xb6;
         pchMessageStart[3] = 0xdb;
-        vAlertPubKey = ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9");
+        vAlertPubKey = ParseHex("04dd495d02a611dffc9647dd1a50e5f84ae4114f7324903d55b2d9a10f77d3aea02db3e19e0f342b698c4c640f376287a4c09146bf71860730c9d467f467fe937d");
         nDefaultPort = 4200;
         bnProofOfWorkLimit = ~uint256(0) >> 20;
         nSubsidyHalvingInterval = 840000;
@@ -142,7 +142,7 @@ public:
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 50 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("049ed967f7c8fdcbe176c3b6455320ad92afd399d4cee77cc28060c3f415a654d327083d10f8b62486d6b94214529fc95dd16b888663a89a2f93ce0be466f01fd7") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
@@ -201,7 +201,7 @@ public:
         pchMessageStart[1] = 0xc1;
         pchMessageStart[2] = 0xb7;
         pchMessageStart[3] = 0xdc;
-        vAlertPubKey = ParseHex("0449623fc74489a947c4b15d579115591add020e53b3490bf47297dfa3762250625f8ecc2fb4fc59f69bdce8f7080f3167808276ed2c79d297054367566038aa82");
+        vAlertPubKey = ParseHex("048d084203c95c7dc8347cde083f849002a33d01326854954481686abf83fb9bbc80fbc01e71dbcdd41c0326f42b5e06885722fbc23a2fa94da17bdb65bdd608a8");
         nDefaultPort = 14200;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
