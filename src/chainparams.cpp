@@ -54,7 +54,7 @@ static void convertSeed6(std::vector<CAddress> &vSeedsOut, const SeedSpec6 *data
  */
 static Checkpoints::MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
-        (  0, uint256("0xda2c19feab8b1614d924d77b3d09a2a72e6d382024e2f516e486c0527cfa7f8d"))
+        (  0, uint256("0xace489e89e9b99dc4e83076aafbd8d7b91101d735f6f4d2857166b3e53e01b30"))
         ;
 static const Checkpoints::CCheckpointData data = {
         &mapCheckpoints,
@@ -66,7 +66,7 @@ static const Checkpoints::CCheckpointData data = {
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
         boost::assign::map_list_of
-        ( 0, uint256("0x301cc3af25872dab621ec3b7d778800b6367cc54bfd6405d49bd90a9f1bbea03"))
+        ( 0, uint256("0xfd02c3b498848a37683a2db3c2d6347f0ac99545e5ce0cc42551887625e940d9"))
         ;
 static const Checkpoints::CCheckpointData dataTestnet = {
         &mapCheckpointsTestnet,
@@ -134,11 +134,11 @@ public:
         genesis.nVersion = 1;
         genesis.nTime    = 1447541441;
         genesis.nBits    = 0x1e0ffff0;
-        genesis.nNonce   = 14319;
+        genesis.nNonce   = 1175058;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0xda2c19feab8b1614d924d77b3d09a2a72e6d382024e2f516e486c0527cfa7f8d"));
-        assert(genesis.hashMerkleRoot == uint256("0xfbddcbab2b7420e68e8507eafbf682f30a2e93ab05e2d21490a384edd40786af"));
+        assert(hashGenesisBlock == uint256("0xace489e89e9b99dc4e83076aafbd8d7b91101d735f6f4d2857166b3e53e01b30"));
+        assert(genesis.hashMerkleRoot == uint256("0x8785cd2a9d8d3b1b8a251bdc50ae2dcaa281fc02db90f15191140106c00c92d8"));
 
         vSeeds.push_back(CDNSSeedData("dankcoin.org", "dankseed.dankcoin.org"));
 
@@ -193,9 +193,9 @@ public:
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1447542101;
-        genesis.nNonce = 597456;
+        genesis.nNonce = 641147;
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x301cc3af25872dab621ec3b7d778800b6367cc54bfd6405d49bd90a9f1bbea03"));
+        assert(hashGenesisBlock == uint256("0xfd02c3b498848a37683a2db3c2d6347f0ac99545e5ce0cc42551887625e940d9"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
