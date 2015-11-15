@@ -55,11 +55,16 @@ static void convertSeed6(std::vector<CAddress> &vSeedsOut, const SeedSpec6 *data
 static Checkpoints::MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
         (  0, uint256("0xace489e89e9b99dc4e83076aafbd8d7b91101d735f6f4d2857166b3e53e01b30"))
+        (  1, uint256("0xfaee446cd46a9802b01aba659240186cc4ce3b46f59949d0305f8ba5ef439f16"))
+        (  2, uint256("0xdc9aee80648c1cfa16546a496aee97a3ba093ca0ca812bb7bde21c7141a17a47"))
+        (  25, uint256("0x93c23a926cb099a02180fa63c346a4d24df8efc94c56447e82fdfd7e96c72cd7"))
+        (  50, uint256("0xecec9d2d181dc8b5444265a019c8ec2fb028c79ac7fbfbf2a16b64b333073309"))
+        (  95, uint256("0xae26a1e76046676745271672488b10c920018f214c727c5c80c4be5fa7135179"))
         ;
 static const Checkpoints::CCheckpointData data = {
         &mapCheckpoints,
-        1447541441, // * UNIX timestamp of last checkpoint block
-        0,   // * total number of transactions between genesis and last checkpoint
+        1447561485, // * UNIX timestamp of last checkpoint block
+        95,   // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
         5500.0     // * estimated number of transactions per day after checkpoint
     };
@@ -140,15 +145,16 @@ public:
         assert(hashGenesisBlock == uint256("0xace489e89e9b99dc4e83076aafbd8d7b91101d735f6f4d2857166b3e53e01b30"));
         assert(genesis.hashMerkleRoot == uint256("0x8785cd2a9d8d3b1b8a251bdc50ae2dcaa281fc02db90f15191140106c00c92d8"));
 
+        convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
+
         vSeeds.push_back(CDNSSeedData("dankcoin.org", "dankseed.dankcoin.org"));
+        vSeeds.push_back(CDNSSeedData("pepeshare.com", "dankseed.pepeshare.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(55);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(143);
         base58Prefixes[SECRET_KEY] =     list_of(117);
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x83)(0xD7)(0xA8);
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x83)(0xBF)(0xC3);
-
-        convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
         fRequireRPCPassword = true;
         fMiningRequiresPeers = true;
@@ -199,6 +205,9 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
+
+        convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
+
         vSeeds.push_back(CDNSSeedData("dankcoin.org", "testnet-dankseed.dankcoin.org"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(65);
@@ -206,8 +215,6 @@ public:
         base58Prefixes[SECRET_KEY]     = list_of(127);
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x26)(0x76)(0xD4);
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x26)(0xA7)(0x26);
-
-        convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 
         fRequireRPCPassword = true;
         fMiningRequiresPeers = true;
