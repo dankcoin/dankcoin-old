@@ -77,11 +77,11 @@ static const Checkpoints::CCheckpointData dataTestnet = {
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
         boost::assign::map_list_of
-        ( 0, uint256("0x3b8a93c0a2b638f83bf7aee444d7573f23bea79dfbd590dd05f41423b04766ed"))
+        ( 0, uint256("0x4ef245bd3d4da0fd9070586d897345a694deafcdc7457febcf1af05bb442d8d4"))
         ;
 static const Checkpoints::CCheckpointData dataRegtest = {
         &mapCheckpointsRegtest,
-        0,
+        1447542586,
         0,
         0
     };
@@ -249,10 +249,10 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1447542586;
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 4;
+        genesis.nNonce = 11;
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 19444;
-        assert(hashGenesisBlock == uint256("0x3b8a93c0a2b638f83bf7aee444d7573f23bea79dfbd590dd05f41423b04766ed"));
+        assert(hashGenesisBlock == uint256("0x4ef245bd3d4da0fd9070586d897345a694deafcdc7457febcf1af05bb442d8d4"));
 
         vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();  //! Regtest mode doesn't have any DNS seeds.
